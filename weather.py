@@ -4,7 +4,7 @@ import csv
 from datetime import datetime
 import os.getenv("WEATHER_API_KEY")
 # KEY는 나중에 암호화!!
-MY_API_KEY = 
+MY_API_KEY = os.getenv("WEATHER_API_KEY")
 
 city_name = "Seoul"
 url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={MY_API_KEY}"
